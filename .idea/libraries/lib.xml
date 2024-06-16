@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/JBotSim/lib/asm-all-4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JBotSim/lib/BaseClient.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JBotSim/lib/javassist.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JBotSim/lib/jfreesvg-3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JBotSim/lib/jafama.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
