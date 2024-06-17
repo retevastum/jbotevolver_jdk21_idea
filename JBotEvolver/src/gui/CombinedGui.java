@@ -11,6 +11,8 @@ import javax.swing.UnsupportedLookAndFeelException;
 
 import simulation.util.Arguments;
 
+import java.awt.*;
+
 public class CombinedGui extends JFrame {
 	
 	private JTabbedPane tabbedPane;
@@ -28,7 +30,7 @@ public class CombinedGui extends JFrame {
 		}
 		
 		tabbedPane = new JTabbedPane();
-		
+
 		JBotEvolver jbot = null;
 		try {
 			jbot = new JBotEvolver(args);

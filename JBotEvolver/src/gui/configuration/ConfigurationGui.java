@@ -1,10 +1,6 @@
 package gui.configuration;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.GridLayout;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -128,10 +124,14 @@ public class ConfigurationGui extends Gui {
 		robotConfig = new RobotsResult();
 		result = new ConfigurationResult(keys);
 
-		setLayout(new BorderLayout());
-		add(initResultPanel(), BorderLayout.EAST);
-		add(initSelectionPanel(), BorderLayout.WEST);
-		add(initConfigurationPanel(), BorderLayout.CENTER);
+		setLayout(new GridLayout(1, 3));
+		Component configPanel = initConfigurationPanel();
+		Component resultPanel = initResultPanel();
+		add(initSelectionPanel());
+		add(configPanel);
+		add(resultPanel);
+
+
 
 		initListeners();
 
